@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-tut"
+    }
+  },
+  "defaultProject": "angular-tut",
+  "cli": {
+    "analytics": "49e16fa9-fea5-4c61-b381-6cf5c3bdb60c"
+  }
 }

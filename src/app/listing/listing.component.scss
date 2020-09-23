@@ -1,0 +1,25 @@
+.box {
+  background-color: honeydew;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  justify-self: center;
+  margin: auto;
+  place-items: center;
+  vertical-align: middle;
+  margin-top: 5%;
+
+}
+
+li {
+  margin-bottom: 1%;
+  border: 2px solid black;
+  width: 100%;
+}
+
