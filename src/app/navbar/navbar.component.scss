@@ -3,15 +3,21 @@ a {
 }
 
 div {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 5%;
   width: 15%;
   background-color: bisque;
+  height: 100%;
+
+  align-items: center;
 }
 
 nav {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: darkkhaki;
+
+  background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(189,183,107,1) 44%);
   border-bottom: solid;
   border-color: darkblue;
+  height: 7.5%;
 }
