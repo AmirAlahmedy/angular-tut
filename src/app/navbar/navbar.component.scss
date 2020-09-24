@@ -1,8 +1,17 @@
 a {
-  margin-left: 2%;
+  margin-left: 5%;
+}
+
+div {
+  margin-left: 5%;
+  width: 15%;
+  background-color: bisque;
 }
 
 nav {
   display: flex;
   flex-wrap: wrap;
+  background-color: darkkhaki;
+  border-bottom: solid;
+  border-color: darkblue;
 }

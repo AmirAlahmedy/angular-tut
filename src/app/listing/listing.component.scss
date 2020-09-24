@@ -2,7 +2,7 @@
   background-color: honeydew;
 }
 
-ul {
+mat-list {
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -17,9 +17,9 @@ ul {
 
 }
 
-li {
+mat-list-item {
   margin-bottom: 1%;
   border: 2px solid black;
-  width: 100%;
+  width: 65%;
 }
 

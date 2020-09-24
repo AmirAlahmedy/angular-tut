@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpParams } from '@angular/common/http';
+import { Observable, throwError } from 'rxjs';
+import {catchError, retry} from 'rxjs/operators';
 
 @Component({
   selector: 'app-listing',
@@ -7,9 +11,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListingComponent implements OnInit {
 
-  items = ['mobile', "laptop", "PC", "gaming console"];
-
-  constructor() { }
+  items = [];
+  constructor(private http: HttpClient) {
+    http.get('https://jsonplaceholder.typicode.com/users')
+      .subscribe({
+        next: (data) => {
+          data.forEach(element => {
+            this.items.push(element.name);
+          });
+        }
+      })
+  }
 
   ngOnInit(): void {
   }
