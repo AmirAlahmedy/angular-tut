@@ -17,9 +17,11 @@ export class ListingComponent implements OnInit {
       .subscribe({
         next: (data) => {
           data.forEach(element => {
-            this.items.push(element.name);
+            this.items.push(element.name );
           });
-        }
+        },
+        error: err => console.log(err),
+        complete: () => console.log('Completed!')
       })
   }
 

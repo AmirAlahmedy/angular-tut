@@ -9,12 +9,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { HttpClientModule } from '@angular/common/http';
+import { GridComponent } from './grid/grid.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    ListingComponent
+    ListingComponent,
+    GridComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,10 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatSliderModule,
     MatPaginatorModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      {path: 'grid', component: GridComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

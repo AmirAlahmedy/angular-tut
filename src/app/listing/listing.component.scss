@@ -21,7 +21,11 @@ mat-list-item {
   margin-bottom: 1%;
   border: 2px solid black;
   width: 65%;
-  background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 84%, rgba(148,187,233,1) 100%);
+  background: transparent;
+}
+
+mat-list-item:hover{
+  border: none;
+  font-weight: bold;
 }
 
