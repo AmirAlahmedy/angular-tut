@@ -1,5 +1,5 @@
 <mat-list>
-  <mat-list-item *ngFor = "let item of items"><span class="box">{{item}}</span></mat-list-item>
+  <mat-list-item *ngFor = "let item of items"><mat-card-title class="box">{{item}}</mat-card-title></mat-list-item>
 </mat-list>
 <!-- <mat-slider min="1" max="100" step="1" value="1"></mat-slider> -->
 <mat-paginator [length]="length"

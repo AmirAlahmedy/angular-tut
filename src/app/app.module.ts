@@ -11,13 +11,17 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { HttpClientModule } from '@angular/common/http';
 import { GridComponent } from './grid/grid.component';
 import { RouterModule } from '@angular/router';
+import { ExpansioComponent } from './expansio/expansio.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ListingComponent,
-    GridComponent
+    GridComponent,
+    ExpansioComponent
   ],
   imports: [
     BrowserModule,
@@ -26,9 +30,12 @@ import { RouterModule } from '@angular/router';
     MatSliderModule,
     MatPaginatorModule,
     HttpClientModule,
+    MatExpansionModule,
+    MatGridListModule,
     RouterModule.forRoot([
       {path: 'home', component:ListingComponent},
-      {path: 'grid', component: GridComponent}
+      {path: 'grid', component: GridComponent},
+      {path: 'contacts', component: ExpansioComponent}
     ])
   ],
   providers: [],

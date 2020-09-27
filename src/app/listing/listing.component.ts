@@ -16,7 +16,6 @@ export class ListingComponent implements OnInit {
   length = 100;
   pageSize = 10;
   pageSizeOptions = [5, 10, 25, 100];
-  pageEvent: PageEvent;
   mHTTP;
 
   constructor(private http: HttpClient) {
