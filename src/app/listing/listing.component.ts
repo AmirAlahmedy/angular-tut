@@ -17,6 +17,7 @@ export class ListingComponent implements OnInit {
   pageSize = 10;
   pageSizeOptions = [5, 10, 25, 100];
   mHTTP;
+  images = [];
 
   constructor(private http: HttpClient) {
     this.mHTTP = http;
@@ -29,7 +30,15 @@ export class ListingComponent implements OnInit {
         },
         error: err => console.log(err),
         complete: () => console.log('Completed!')
-      })
+      });
+    // http.get('https://picsum.photos/200')
+    //     .subscribe({
+    //       next: (data) => {
+    //         this.images.push(data);
+    //       },
+    //       error: err => console.log(err),
+    //       complete: () => console.log('Completed!')
+    //     });
   }
 
   ngOnInit(): void {
@@ -50,4 +59,10 @@ export class ListingComponent implements OnInit {
         complete: () => console.log('Completed!')
       })
   }
+
+  onSubmit(event) {
+    // TODO: Use EventEmitter with form value
+    console.log(event);
+  }
+
 }

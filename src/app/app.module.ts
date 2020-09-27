@@ -14,14 +14,17 @@ import { RouterModule } from '@angular/router';
 import { ExpansioComponent } from './expansio/expansio.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import {MatInputModule} from '@angular/material/input';
+import { NumbersComponent } from './numbers/numbers.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ListingComponent,
     GridComponent,
-    ExpansioComponent
+    ExpansioComponent,
+    NumbersComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     HttpClientModule,
     MatExpansionModule,
     MatGridListModule,
+    MatInputModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       {path: 'home', component:ListingComponent},
       {path: 'grid', component: GridComponent},
