@@ -2,7 +2,7 @@
 <form class="example-form" [formGroup] = "numbersForm" (ngSubmit) = "onSubmit()">
   <mat-form-field class="example-full-width">
     <mat-label>Fun fact</mat-label>
-    <input matInput placeholder="Enter a number" [formControl]="number" value="5">
+    <input matInput placeholder="Enter a number" [formControl] = "number" value="5">
   </mat-form-field>
   <!-- <mat-form-field class="example-full-width">
     <mat-label>Leave a comment</mat-label>
@@ -10,4 +10,4 @@
   </mat-form-field> -->
   <button type="submit" [disabled]="!numbersForm.valid">Submit</button>
 </form>
-<div id="fact"></div>
+<mat-card id="fact"></mat-card>

@@ -17,6 +17,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
 import { NumbersComponent } from './numbers/numbers.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatGridListModule,
     MatInputModule,
     ReactiveFormsModule,
+    MatCardModule,
     RouterModule.forRoot([
       {path: 'home', component:ListingComponent},
       {path: 'grid', component: GridComponent},
