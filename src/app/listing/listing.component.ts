@@ -40,6 +40,7 @@ export class ListingComponent implements OnInit {
     this.mHTTP.get('https://api.github.com/users')
     .subscribe({
       next: (data) => {
+        this.items = [];
         if(event.pageIndex != 0){
           data?.slice(event.pageIndex*this.pageSize, event.pageIndex*this.pageSize + this.pageSize).forEach(element => {
             this.items.push(element.login);
