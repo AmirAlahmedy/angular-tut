@@ -27,6 +27,7 @@ import { RouterModule } from '@angular/router';
     MatPaginatorModule,
     HttpClientModule,
     RouterModule.forRoot([
+      {path: 'home', component:ListingComponent},
       {path: 'grid', component: GridComponent}
     ])
   ],

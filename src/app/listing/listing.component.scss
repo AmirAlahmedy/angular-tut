@@ -1,5 +1,5 @@
 .box {
-  background-color: transparent;
+  color: white;
 }
 
 mat-list {
@@ -18,14 +18,15 @@ mat-list {
 }
 
 mat-list-item {
+  background-color: rgba(0,0,0,.5);
+  border: 2px solid;
   margin-bottom: 1%;
-  border: 2px solid black;
-  width: 65%;
-  background: transparent;
+  width: 35%;
+  border-radius: 5px;
 }
 
 mat-list-item:hover{
   border: none;
-  font-weight: bold;
+  background-color: black;
 }
 

@@ -11,13 +11,21 @@ import {catchError, retry} from 'rxjs/operators';
 })
 export class ListingComponent implements OnInit {
 
+
   items = [];
+  length = 100;
+  pageSize = 10;
+  pageSizeOptions = [5, 10, 25, 100];
+  pageEvent: PageEvent;
+  mHTTP;
+
   constructor(private http: HttpClient) {
-    http.get('https://jsonplaceholder.typicode.com/users')
+    this.mHTTP = http;
+    http.get('https://api.github.com/users')
       .subscribe({
         next: (data) => {
-          data.forEach(element => {
-            this.items.push(element.name );
+          data?.slice(0, this.pageSize).forEach(element => {
+            this.items.push(element.login );
           });
         },
         error: err => console.log(err),
@@ -28,4 +36,18 @@ export class ListingComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onPaginateChange(event){
+    this.mHTTP.get('https://api.github.com/users')
+    .subscribe({
+      next: (data) => {
+        if(event.pageIndex != 0){
+          data?.slice(event.pageIndex*this.pageSize, event.pageIndex*this.pageSize + this.pageSize).forEach(element => {
+            this.items.push(element.login);
+          });
+        }
+        },
+        error: err => console.log(err),
+        complete: () => console.log('Completed!')
+      })
+  }
 }
