@@ -12,8 +12,9 @@ export class NumbersComponent implements OnInit {
   numbersForm = new FormGroup({
     number: new FormControl('5')
   });
-  http;
-  constructor(private http:HttpClient) {
+
+  http: HttpClient;
+  constructor(private http: HttpClient) {
     this.http = http;
   }
 
