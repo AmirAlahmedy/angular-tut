@@ -13,7 +13,13 @@ mat-list {
   margin-top: 5%;
 
 }
-
+mat-card {
+  background-color: #f6d6ad;// rgba(0,0,0,.5);
+}
+mat-card:hover {
+  background-color: black;
+  color: white;
+}
 mat-list-item {
   background-color: #f6d6ad;// rgba(0,0,0,.5);
   color: black;
