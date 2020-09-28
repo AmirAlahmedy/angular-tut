@@ -14,8 +14,8 @@ export class NumbersComponent implements OnInit {
   });
 
   http: HttpClient;
-  constructor(private http: HttpClient) {
-    this.http = http;
+  constructor(private http1: HttpClient) {
+    this.http = http1;
   }
 
   ngOnInit(): void {
