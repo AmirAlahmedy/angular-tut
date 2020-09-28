@@ -31,14 +31,6 @@ export class ListingComponent implements OnInit {
         error: err => console.log(err),
         complete: () => console.log('Completed!')
       });
-    // http.get('https://picsum.photos/200')
-    //     .subscribe({
-    //       next: (data) => {
-    //         this.images.push(data);
-    //       },
-    //       error: err => console.log(err),
-    //       complete: () => console.log('Completed!')
-    //     });
   }
 
   ngOnInit(): void {

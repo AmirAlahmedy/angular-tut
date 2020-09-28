@@ -10,6 +10,8 @@ mat-list {
   margin: auto;
   place-items: center;
   vertical-align: middle;
+  width: 40%;
+  margin-right: 2%;
 
 }
 mat-card {
@@ -24,7 +26,7 @@ mat-list-item {
   color: black;
   // border: 2px solid;
   margin-bottom: 1%;
-  width: 35%;
+  width: 100%;
   border-radius: 5px;
 }
 
@@ -36,3 +38,10 @@ mat-list-item:hover{
   text-align: center;
 }
 
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  mat-list-item {
+    width: 100%;
+  }
+}

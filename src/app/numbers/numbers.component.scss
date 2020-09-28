@@ -16,3 +16,10 @@ button {
   margin-bottom: 2%;
   visibility: hidden;
 }
+
+@media only screen and (max-width: 768px) {
+  form {
+    margin-top: 4%;
+  }
+}
+
