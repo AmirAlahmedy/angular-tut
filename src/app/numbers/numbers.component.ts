@@ -27,7 +27,7 @@ export class NumbersComponent implements OnInit {
     this.http.get("http://numbersapi.com/"+value+"/math")
       .subscribe({
         next: (data) =>{
-          document.querySelector('#fact').textContent = data.text;
+          // document.querySelector('#fact').textContent = data.text;
         },
         error: err => {
           console.log(err.error.text);
