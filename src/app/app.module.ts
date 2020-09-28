@@ -18,6 +18,7 @@ import {MatInputModule} from '@angular/material/input';
 import { NumbersComponent } from './numbers/numbers.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
+import { PoetryComponent } from './poetry/poetry.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import {MatCardModule} from '@angular/material/card';
     ListingComponent,
     GridComponent,
     ExpansioComponent,
-    NumbersComponent
+    NumbersComponent,
+    PoetryComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import {MatCardModule} from '@angular/material/card';
     RouterModule.forRoot([
       {path: 'home', component:ListingComponent},
       {path: 'grid', component: GridComponent},
-      {path: 'contacts', component: ExpansioComponent}
+      {path: 'contacts', component: ExpansioComponent},
+      {path: 'poetry', component: PoetryComponent}
     ])
   ],
   providers: [],

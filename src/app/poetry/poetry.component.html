@@ -2,10 +2,10 @@
   <mat-expansion-panel hideToggle>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        {{name}}
+       {{title}}
       </mat-panel-title>
       <mat-panel-description>
-        {{job}}
+      {{author}}
       </mat-panel-description>
     </mat-expansion-panel-header>
     <p>This is the primary content of the panel.</p>
@@ -14,12 +14,12 @@
                        (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Details
+
       </mat-panel-title>
       <mat-panel-description>
-        {{panelOpenState ? 'Minimize' : 'More'}}
+        {{panelOpenState ? 'minimise' : 'maximise'}} poem
       </mat-panel-description>
     </mat-expansion-panel-header>
-    DOB: 29th OCT 1998
+    <p>{{lines}}</p>
   </mat-expansion-panel>
 </mat-accordion>
