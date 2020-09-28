@@ -24,9 +24,9 @@ export class ListingComponent implements OnInit {
     http.get('https://api.github.com/users')
       .subscribe({
         next: (data) => {
-          data?.slice(0, this.pageSize).forEach(element => {
-            this.items.push(element.login );
-          });
+            data.slice(0, this.pageSize).forEach(element => {
+              this.items.push(element.login );
+            });
         },
         error: err => console.log(err),
         complete: () => console.log('Completed!')

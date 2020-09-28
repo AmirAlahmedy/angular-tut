@@ -41,7 +41,17 @@ mat-list-item:hover{
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  mat-list-item {
+  mat-list {
     width: 100%;
   }
 }
+
+.cont {
+width: 40%;
+float: left;
+margin-left: 4%;
+margin-top: 4%;
+}
+
+
+
