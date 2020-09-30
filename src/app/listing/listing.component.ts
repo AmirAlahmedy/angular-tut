@@ -24,10 +24,11 @@ export class ListingComponent implements OnInit {
     http.get('https://api.github.com/users')
       .subscribe({
         next: (data) => {
-          if(data[0]){
+          if(Array.isArray(data)){
             data.slice(0, this.pageSize).forEach(element => {
               this.items.push(element.login );
-            });}
+            });
+          }
         },
         error: err => console.log(err),
         complete: () => console.log('Completed!')
@@ -42,7 +43,7 @@ export class ListingComponent implements OnInit {
     .subscribe({
       next: (data) => {
         this.items = [];
-        if(event.pageIndex != 0){
+        if(event.pageIndex != 0 && Array.isArray(data)){
           data?.slice(event.pageIndex*this.pageSize, event.pageIndex*this.pageSize + this.pageSize).forEach(element => {
             this.items.push(element.login);
           });
