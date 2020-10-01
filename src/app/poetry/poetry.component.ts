@@ -10,6 +10,7 @@ export class PoetryComponent implements OnInit {
   title;
   author;
   lines;
+  panelOpenState = false;
   constructor(private http: HttpClient) {
     http.get('https://poetrydb.org/author,title/Shakespeare;Sonnet')
       .subscribe({

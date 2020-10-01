@@ -22,6 +22,7 @@ import { PoetryComponent } from './poetry/poetry.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { HomeComponent } from './home/home.component';
+import {MatSelectModule} from '@angular/material/select';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +48,7 @@ import { HomeComponent } from './home/home.component';
     ReactiveFormsModule,
     MatCardModule,
     MatSidenavModule,
+    MatSelectModule,
     RouterModule.forRoot([
       {path: 'home', component:HomeComponent},
       {path: 'grid', component: GridComponent},
