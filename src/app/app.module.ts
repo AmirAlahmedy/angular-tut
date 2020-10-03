@@ -19,10 +19,11 @@ import { NumbersComponent } from './numbers/numbers.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import { PoetryComponent } from './poetry/poetry.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { HomeComponent } from './home/home.component';
 import {MatSelectModule} from '@angular/material/select';
+import {MatListModule} from '@angular/material/list';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,6 @@ import {MatSelectModule} from '@angular/material/select';
     ExpansioComponent,
     NumbersComponent,
     PoetryComponent,
-    SidenavComponent,
     HomeComponent
   ],
   imports: [
@@ -49,8 +49,9 @@ import {MatSelectModule} from '@angular/material/select';
     MatCardModule,
     MatSidenavModule,
     MatSelectModule,
+    MatListModule,
     RouterModule.forRoot([
-      {path: 'home', component:HomeComponent},
+      {path: '', component:HomeComponent},
       {path: 'grid', component: GridComponent},
       {path: 'contacts', component: ExpansioComponent},
       {path: 'poetry', component: PoetryComponent}
