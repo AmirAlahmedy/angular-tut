@@ -23,7 +23,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { HomeComponent } from './home/home.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatListModule} from '@angular/material/list';
-
+import {MatChipsModule} from '@angular/material/chips';
+import { ResumeComponent } from './resume/resume.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import {MatListModule} from '@angular/material/list';
     ExpansioComponent,
     NumbersComponent,
     PoetryComponent,
-    HomeComponent
+    HomeComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +52,7 @@ import {MatListModule} from '@angular/material/list';
     MatSidenavModule,
     MatSelectModule,
     MatListModule,
+    MatChipsModule,
     RouterModule.forRoot([
       {path: '', component:HomeComponent},
       {path: 'grid', component: GridComponent},

@@ -11,7 +11,7 @@ import {catchError, retry} from 'rxjs/operators';
 })
 export class ListingComponent implements OnInit {
 
-
+  pageEvent;
   items = [];
   length = 100;
   pageSize = 10;

@@ -4,10 +4,6 @@
     <mat-label>Fun fact</mat-label>
     <input matInput placeholder="Enter a number" [formControl] = "number">
   </mat-form-field>
-  <!-- <mat-form-field class="example-full-width">
-    <mat-label>Leave a comment</mat-label>
-    <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-  </mat-form-field> -->
   <button type="submit" [disabled]="!numbersForm.valid">Submit</button>
 </form>
 <mat-card id="fact"></mat-card>
