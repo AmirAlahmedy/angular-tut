@@ -25,6 +25,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatListModule} from '@angular/material/list';
 import {MatChipsModule} from '@angular/material/chips';
 import { ResumeComponent } from './resume/resume.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,6 +55,8 @@ import { ResumeComponent } from './resume/resume.component';
     MatSelectModule,
     MatListModule,
     MatChipsModule,
+    MatIconModule,
+    MatAutocompleteModule,
     RouterModule.forRoot([
       {path: '', component:HomeComponent},
       {path: 'grid', component: GridComponent},
