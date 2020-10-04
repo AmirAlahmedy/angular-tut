@@ -14,6 +14,10 @@ mat-list {
   margin-right: 2%;
 
 }
+mat-paginator {
+  background-color: transparent;
+  color: antiquewhite;
+}
 mat-card {
   background-color: #f6d6ad;// rgba(0,0,0,.5);
 }
@@ -32,9 +36,10 @@ mat-list-item {
 }
 
 mat-list-item:hover{
-  color: white;
+  color: wheat;
   border: none;
-  background-color: black;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
 }
