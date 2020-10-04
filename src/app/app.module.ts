@@ -27,6 +27,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import { ResumeComponent } from './resume/resume.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatRippleModule} from '@angular/material/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +57,7 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     MatListModule,
     MatChipsModule,
     MatIconModule,
+    MatRippleModule,
     MatAutocompleteModule,
     RouterModule.forRoot([
       {path: '', component:HomeComponent},

@@ -1,7 +1,7 @@
 mat-button {
   margin-left: 5%;
-  padding: 1%;
-  border: none;
+  padding: .5%;
+  border-radius: 5px;
 }
 mat-button:focus{
   border: none;
@@ -43,3 +43,16 @@ header{
   box-shadow: inset 1px 1px 3px 0px black;
 }
 
+.example-ripple-container {
+  cursor: pointer;
+  text-align: center;
+
+
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+}

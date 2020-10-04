@@ -1,9 +1,37 @@
 <nav>
   <div class="btn-wrapper">
-    <mat-button routerLink="/">Home</mat-button>
-    <mat-button routerLink="/grid">Documentation</mat-button>
-    <mat-button routerLink="/contacts">Contacts</mat-button>
-    <mat-button routerLink="/poetry">Poetry</mat-button>
+    <mat-button routerLink="/" class="example-ripple-container mat-elevation-z4"
+    matRipple
+    [matRippleCentered]="centered"
+    [matRippleDisabled]="disabled"
+    [matRippleUnbounded]="unbounded"
+    [matRippleRadius]="radius"
+    [matRippleColor]="color"> Home</mat-button>
+
+    <mat-button routerLink="/grid"class="example-ripple-container mat-elevation-z4"
+    matRipple
+    [matRippleCentered]="centered"
+    [matRippleDisabled]="disabled"
+    [matRippleUnbounded]="unbounded"
+    [matRippleRadius]="radius"
+    [matRippleColor]="color">Documentation</mat-button>
+
+    <mat-button routerLink="/contacts" class="example-ripple-container mat-elevation-z4"
+    matRipple
+    [matRippleCentered]="centered"
+    [matRippleDisabled]="disabled"
+    [matRippleUnbounded]="unbounded"
+    [matRippleRadius]="radius"
+    [matRippleColor]="color">Contacts</mat-button>
+
+    <mat-button routerLink="/poetry" class="example-ripple-container mat-elevation-z4"
+    matRipple
+    [matRippleCentered]="centered"
+    [matRippleDisabled]="disabled"
+    [matRippleUnbounded]="unbounded"
+    [matRippleRadius]="radius"
+    [matRippleColor]="color">Poetry</mat-button>
+    
     <!-- Place this tag where you want the button to render. -->
     <div id="space"></div>
 
