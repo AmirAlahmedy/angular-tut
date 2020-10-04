@@ -6,3 +6,9 @@ $fourth: #f9c0c0 !default;
 mat-expansion-panel-header {
   background-color: $fourth;
 }
+
+section {
+  width: 80%;
+  position: absolute;
+  margin-left: 10%;
+}
